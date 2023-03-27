@@ -1,6 +1,4 @@
 import OuterLayout from "@/components/layouts/OuterLayout";
-import { Courier_Prime } from "next/font/google";
-import localFont from "next/font/local";
 export const metadata = {
   title: "Day 1",
   description:
