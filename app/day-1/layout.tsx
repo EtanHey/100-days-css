@@ -1,3 +1,4 @@
+import OuterLayout from "@/components/layouts/OuterLayout";
 import { Courier_Prime } from "next/font/google";
 import localFont from "next/font/local";
 export const metadata = {
@@ -10,9 +11,5 @@ export default function Day1Layout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <section>
-      <main>{children}</main>
-    </section>
-  );
+  return <OuterLayout>{children}</OuterLayout>;
 }

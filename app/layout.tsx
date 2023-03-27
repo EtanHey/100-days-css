@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "./Header";
+import OuterLayout from "@/components/layouts/OuterLayout";
 
 export const metadata = {
   title: "Create Next App",
@@ -13,9 +15,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`flex h-0 min-h-screen place-items-center justify-center text-center`}
-      >
+      <body className={`place-items-center text-center`}>
+        <Header />
         {children}
       </body>
     </html>
