@@ -1,9 +1,12 @@
 import React from "react";
 
-const Zero = ({ z = 8, left = 17 }: { z?: number; left?: number }) => {
+const Zero = ({ z, left }: { z?: number; left?: string }) => {
   return (
     <span
-      className={`absolute top-0 left-[${left}px] z-[${z}] box-border h-[100px] w-[100px] rounded-full border-24 border-solid border-white shadow-firstDayTip`}
+      className={`
+      ${left ? `left-[${left}]` : "left-[17px]"} 
+      ${z ? `z-[${z}]` : "z-[8]"}
+       absolute top-0  box-border h-[100px] w-[100px] rounded-full border-24 border-solid border-white shadow-firstDayTip`}
     ></span>
   );
 };

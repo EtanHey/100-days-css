@@ -7,7 +7,7 @@ const page = () => {
       <div className="number relative h-[100px] w-[200px]">
         <One />
         <Zero />
-        <Zero left={100} z={6} />
+        <Zero left={"100px"} z={6} />
       </div>
       <Text />
     </Frame>
