@@ -107,6 +107,73 @@ module.exports = {
         975: "9.75",
         1000: "10",
       },
+      animation: {
+        expandTop: "expandTop 0.7s cubic-bezier(.76,.34,.72,.81) forwards",
+        contractTop: "contractTop 0.7s ease both",
+        contractBottom: "contractBottom 0.7s ease both",
+        expandBottom:
+          "expandBottom 0.7s cubic-bezier(.76,.34,.72,.81) forwards",
+      },
+      keyframes: {
+        expandTop: {
+          "0%": {
+            transform: "translateY(0) translateX(0)",
+          },
+          "30%": {
+            transform: "translateY(3px)",
+          },
+          "60%": {
+            transform: "translateY(-3px)",
+          },
+          "70%": {
+            transform: "translateY(-16px) scaleY(.5)",
+          },
+          "100%": {
+            transform: "scaleX(6) scaleY(.5) translateY(-30px)",
+          },
+        },
+        expandBottom: {
+          "0%": {
+            transform: "translateY(0) translateX(0)",
+          },
+          "30%": {
+            transform: "translateY(-3px)",
+          },
+          "60%": {
+            transform: "translateY(3px)",
+          },
+          "70%": {
+            transform: "translateY(16px) scaleY(.5)",
+          },
+          "100%": {
+            transform: "scaleX(6) scaleY(.5) translateY(30px)",
+          },
+        },
+        contractTop: {
+          "0%": {
+            transform: "scaleX(6) scaleY(.5) translateY(-30px)",
+          },
+
+          "60%": {
+            transform: "scaleX(1) scaleY(.5) translateY(-30px)",
+          },
+          "100%": {
+            transform: "scale(1) translateY(0px)",
+          },
+        },
+        contractBottom: {
+          "0%": {
+            transform: "scaleX(6) scaleY(.5) translateY(30px)",
+          },
+
+          "60%": {
+            transform: "scaleX(1) scaleY(.5) translateY(30px)",
+          },
+          "100%": {
+            transform: "scale(1) translateY(0px)",
+          },
+        },
+      },
     },
   },
   plugins: [],
