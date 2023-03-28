@@ -17,7 +17,7 @@ module.exports = {
       },
       boxShadow: {
         firstDayFrame: "4px 8px 16px 0 rgba(0,0,0,0.1)",
-        thirtySixthFrame: "1px 2px 10px 0px rgba(0,0,0,0.3)",
+        thirtyEighthFrame: "1px 2px 10px 0px rgba(0,0,0,0.3)",
         firstDayTip: "0 0 13px 0 rgba(0,0,0,0.2)",
       },
       borderWidth: {
@@ -51,16 +51,19 @@ module.exports = {
         "9xl": "9rem",
       },
       height: {
+        13: "50px",
         17: "4.25rem",
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
       },
       width: {
+        13: "50px",
         17: "4.25rem",
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
+        76: "19rem",
       },
       scale: {
         100: "1",
