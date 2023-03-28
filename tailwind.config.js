@@ -109,8 +109,8 @@ module.exports = {
       },
       animation: {
         expandTop: "expandTop 0.7s cubic-bezier(.76,.34,.72,.81) forwards",
-        contractTop: "contractTop 0.7s ease both",
-        contractBottom: "contractBottom 0.7s ease both",
+        contractTop: "contractTop 0.7s ease forwards",
+        contractBottom: "contractBottom 0.7s ease forwards",
         expandBottom:
           "expandBottom 0.7s cubic-bezier(.76,.34,.72,.81) forwards",
       },

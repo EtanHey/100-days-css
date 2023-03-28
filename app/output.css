@@ -584,10 +584,6 @@ body {
   top: 50.8%;
 }
 
-.-z-20 {
-  z-index: -20;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -765,7 +761,7 @@ body {
 }
 
 .animate-contractBottom {
-  animation: contractBottom 0.7s ease both;
+  animation: contractBottom 0.7s ease forwards;
 }
 
 @keyframes contractTop {
@@ -783,7 +779,7 @@ body {
 }
 
 .animate-contractTop {
-  animation: contractTop 0.7s ease both;
+  animation: contractTop 0.7s ease forwards;
 }
 
 @keyframes expandBottom {
