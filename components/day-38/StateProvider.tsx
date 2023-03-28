@@ -10,7 +10,7 @@ import SmallExpandLayer from "./SmallExpandLayer";
 const StateProvider = () => {
   const [clicked, setClicked] = useState(false);
   return (
-    <span className="absolute top-1/2 left-1/2 -ml-[200px] -mt-[200px] flex h-[400px] w-[400px] cursor-pointer items-center justify-center overflow-hidden rounded-sm bg-[#9B59B6] text-white shadow-thirtyEighthFrame">
+    <span className="absolute top-1/2 left-1/2 -ml-[200px] -mt-[200px] flex h-[400px] w-[400px] cursor-pointer items-center justify-center overflow-hidden rounded-md bg-[#9B59B6] text-white shadow-thirtyEighthFrame">
       <ExpandLayer clicked={clicked} setClicked={setClicked}>
         <CoveringCircle side="left" />
         <Triangle side="left" />
