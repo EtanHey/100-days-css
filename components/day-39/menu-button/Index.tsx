@@ -6,7 +6,7 @@ const MenuButton = ({
   closeMenu,
   openMenu,
 }: {
-  clicked: boolean;
+  clicked?: boolean;
   closeMenu: () => void;
   openMenu: () => void;
 }) => {

@@ -4,6 +4,9 @@ const nextConfig = {
     appDir: true,
     typedRoutes: true,
   },
+  images: {
+    domains: ["100dayscss.com"],
+  },
 };
 
 module.exports = nextConfig;

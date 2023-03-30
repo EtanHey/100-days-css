@@ -5,18 +5,20 @@ const Line = ({
   clicked,
 }: {
   whichAmI: "top" | "bottom";
-  clicked: boolean;
+  clicked?: boolean;
 }) => {
   return (
     <div
       className={`h-1 w-13 bg-white ${
-        clicked
-          ? whichAmI === "top"
-            ? "animate-expandTop"
-            : "animate-expandBottom"
-          : whichAmI === "top"
-          ? "animate-contractTop"
-          : "animate-contractBottom"
+        clicked !== undefined
+          ? clicked === true
+            ? whichAmI === "top"
+              ? "animate-expandTop"
+              : "animate-expandBottom"
+            : whichAmI === "top"
+            ? "animate-contractTop"
+            : "animate-contractBottom"
+          : ""
       }`}
     />
   );

@@ -19,6 +19,8 @@ module.exports = {
         firstDayFrame: "4px 8px 16px 0 rgba(0,0,0,0.1)",
         thirtyEighthFrame: "1px 2px 10px 0px rgba(0,0,0,0.3)",
         firstDayTip: "0 0 13px 0 rgba(0,0,0,0.2)",
+        FortyDayFrame: "1px 2px 10px 0px rgba(0,0,0,0.2)",
+        FortyOneModal: "4px 8px 12px 0 rgba(0, 0, 0, 0.4);",
       },
       borderWidth: {
         DEFAULT: "1px",
@@ -50,12 +52,64 @@ module.exports = {
         "8xl": "8rem",
         "9xl": "9rem",
       },
+      inset: {
+        15: "3.75rem",
+        23: "95px",
+      },
       height: {
         13: "50px",
         17: "4.25rem",
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
+        "33-40thDay": "8rem",
+        53: "13.125rem",
+        74: "17.5rem",
+        76: "19rem",
+      },
+      minHeight: {
+        13: "50px",
+        17: "4.25rem",
+        18: "4.5rem",
+        19: "4.75rem",
+        20: "5rem",
+        "33-40thDay": "8rem",
+        53: "13.125rem",
+        74: "17.5rem",
+        76: "19rem",
+      },
+      maxHeight: {
+        13: "50px",
+        17: "4.25rem",
+        18: "4.5rem",
+        19: "4.75rem",
+        20: "5rem",
+        "33-40thDay": "8rem",
+        53: "13.125rem",
+        74: "17.5rem",
+        76: "19rem",
+      },
+      maxWidth: {
+        13: "50px",
+        17: "4.25rem",
+        18: "4.5rem",
+        19: "4.75rem",
+        20: "5rem",
+        "33-40thDay": "8rem",
+        53: "13.125rem",
+        74: "17.5rem",
+        76: "19rem",
+      },
+      minWidth: {
+        13: "50px",
+        17: "4.25rem",
+        18: "4.5rem",
+        19: "4.75rem",
+        20: "5rem",
+        "33-40thDay": "8rem",
+        53: "13.125rem",
+        74: "17.5rem",
+        76: "19rem",
       },
       width: {
         13: "50px",
@@ -63,6 +117,9 @@ module.exports = {
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
+        "33-40thDay": "8rem",
+        53: "13.125rem",
+        74: "17.5rem",
         76: "19rem",
       },
       scale: {
@@ -108,11 +165,14 @@ module.exports = {
         1000: "10",
       },
       animation: {
-        expandTop: "expandTop 0.7s cubic-bezier(.76,.34,.72,.81) forwards",
+        expandTop: "expandTop 0.7s ease forwards",
         contractTop: "contractTop 0.7s ease forwards",
         contractBottom: "contractBottom 0.7s ease forwards",
-        expandBottom:
-          "expandBottom 0.7s cubic-bezier(.76,.34,.72,.81) forwards",
+        expandBottom: "expandBottom 0.7s ease forwards",
+        expandToFront: "expandToFront 0.7s ease forwards",
+        contractBack: "contractBack 0.7s ease forwards",
+        openModal: "openModal 0.7s ease-in-out forwards",
+        closeModal: "closeModal 0.6s ease-in-out both",
       },
       keyframes: {
         expandTop: {
@@ -173,6 +233,60 @@ module.exports = {
             transform: "scale(1) translateY(0px)",
           },
         },
+        expandToFront: {
+          "0%": {
+            transform: "scale(1) translateY(0) translateX(0)",
+            left: 0,
+            top: 0,
+          },
+          "100%": {
+            transform: "scale(3) translateY(-50%) translateX(-50%)",
+            left: "50%",
+            top: "50%",
+          },
+        },
+        contractBack: {
+          "0%": {
+            transform: "scale(3) translateY(-50%) translateX(-50%)",
+            zIndex: "50",
+            left: "50%",
+            top: "50%",
+          },
+          "100%": {
+            transform: "scale(1) translateY(0) translateX(0)",
+            zIndex: "10",
+            left: 0,
+            top: 0,
+          },
+        },
+        openModal: {
+          "0%": {
+            transform: "scale(0)",
+          },
+          "60%": {
+            transform: "scale(1.1)",
+          },
+          "80%": {
+            transform: "scale(0.95)",
+          },
+          "100%": {
+            transform: "scale(1)",
+          },
+        },
+        closeModal: {
+          "0%": {
+            transform: "scale(1)",
+          },
+          "20%": {
+            transform: "scale(1.1)",
+          },
+          "100%": {
+            transform: "scale(0)",
+          },
+        },
+      },
+      padding: {
+        7.5: "1.875rem",
       },
     },
   },

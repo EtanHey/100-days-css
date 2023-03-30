@@ -1,10 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import MenuButton from "./menu-button/Index";
 import Menu from "./menu";
 
 const StateProvider = () => {
-  const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState<boolean>();
   const [menu, setMenu] = useState(false);
   const closeMenu = () => {
     setClicked(false);

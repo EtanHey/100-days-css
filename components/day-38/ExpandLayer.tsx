@@ -11,7 +11,12 @@ const ExpandLayer = ({
 }) => {
   return (
     <span
-      onClick={() => setClicked((p) => !p)}
+      onClick={() => {
+        if (clicked) {
+          return;
+        }
+        setClicked((p) => !p);
+      }}
       className={`logo flex bg-clip-content transition-all duration-500 ease-in ${
         clicked ? "scale-950 ease-out" : "scale-100 ease-in"
       }`}
