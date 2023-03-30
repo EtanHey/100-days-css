@@ -13,8 +13,8 @@ const WarningSVG = () => {
         preserveAspectRatio="xMidYMid meet"
       >
         <g
+        className="fill-41st-day-red"
           transform="translate(0.000,38) scale(0.0033665,-0.0033643989)"
-          fill="#F65656"
           stroke="none"
         >
           <path

@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors:{
+        "41st-day-red":"#F65656"
+      },
       fontFamily: {
         courierNew: "var(--font-courier-new)",
         courierNewBold: "var(--font-courier-new-bold)",
@@ -173,6 +176,8 @@ module.exports = {
         contractBack: "contractBack 0.7s ease forwards",
         openModal: "openModal 0.7s ease-in-out forwards",
         closeModal: "closeModal 0.6s ease-in-out both",
+        showErrorPopup: "openModal 0.7s  ease-in-out forwards",
+        hideErrorPopup: "closeModal 0.6s ease-in-out forwards",
       },
       keyframes: {
         expandTop: {
