@@ -1,22 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-const randomStarInset = () => {
-  const stars = Array.from({ length: 300 }, (x, i) => {
-    return i;
-  });
-
-  let starsConfig = {};
-  const starsString = () =>
-    stars.map((star) => {
-      starsConfig = {
-        ...starsConfig,
-        [`l_star_#${star}`]: `${Math.floor(Math.random() * 280 * 100) / 100}px`,
-        [`t_star_#${star}`]: `${Math.floor(Math.random() * 280 * 100) / 100}px`,
-      };
-    });
-  starsString();
-  return starsConfig;
-};
 
 module.exports = {
   mode: "jit",
@@ -79,15 +62,15 @@ module.exports = {
       inset: {
         15: "3.75rem",
         23: "95px",
+        30: "8.125rem",
       },
-      inset: { ...randomStarInset() },
       height: {
         13: "50px",
         17: "4.25rem",
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
-        "33-40thDay": "8rem",
+        30: "8.125rem",
         53: "13.125rem",
         74: "17.5rem",
         76: "19rem",
@@ -98,7 +81,8 @@ module.exports = {
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
-        "33-40thDay": "8rem",
+        30: "8.125rem",
+
         53: "13.125rem",
         74: "17.5rem",
         76: "19rem",
@@ -109,7 +93,8 @@ module.exports = {
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
-        "33-40thDay": "8rem",
+        30: "8.125rem",
+
         53: "13.125rem",
         74: "17.5rem",
         76: "19rem",
@@ -120,7 +105,8 @@ module.exports = {
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
-        "33-40thDay": "8rem",
+        30: "8.125rem",
+
         53: "13.125rem",
         74: "17.5rem",
         76: "19rem",
@@ -131,7 +117,8 @@ module.exports = {
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
-        "33-40thDay": "8rem",
+        30: "8.125rem",
+
         53: "13.125rem",
         74: "17.5rem",
         76: "19rem",
@@ -142,7 +129,8 @@ module.exports = {
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
-        "33-40thDay": "8rem",
+        30: "8.125rem",
+
         53: "13.125rem",
         74: "17.5rem",
         76: "19rem",

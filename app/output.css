@@ -438,6 +438,10 @@ body {
   overflow: hidden;
 }
 
+.star {
+  animation: random(20) + 20/10 + s flicker (random(20) / -10) + s infinite;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -555,6 +559,10 @@ body {
   left: 0px;
 }
 
+.-left-30 {
+  left: -8.125rem;
+}
+
 .-left-4 {
   left: -1rem;
 }
@@ -569,6 +577,10 @@ body {
 
 .left-1\/2 {
   left: 50%;
+}
+
+.left-15 {
+  left: 3.75rem;
 }
 
 .left-3 {
@@ -595,76 +607,16 @@ body {
   top: 50%;
 }
 
+.top-23 {
+  top: 95px;
+}
+
 .top-\[50\%\] {
   top: 50%;
 }
 
 .top-\[50\.8\%\] {
   top: 50.8%;
-}
-
-.top-\[theme\(colors\.red\.500\)\] {
-  top: #ef4444;
-}
-
-.top-\[colors\.red\.500\] {
-  top: colors.red.500;
-}
-
-.top-\[\] {
-  top: ;
-}
-
-.top-\[calc\(\$\{280\}\*1\)px\] {
-  top: calc(${280}*1)px;
-}
-
-.top-\[calc\(\$\{280\}\*1\)\+px\] {
-  top: calc(${280}*1)+px;
-}
-
-.top-\[calc\(\$\{280\}\)\+px\] {
-  top: calc(${280})+px;
-}
-
-.top-\[calc\(\$\{280\*1\}\)\+px\] {
-  top: calc(${280 * 1})+px;
-}
-
-.top-\[calc\(280\*1\)\+px\] {
-  top: calc(280 * 1)+px;
-}
-
-.top-\[calc\(280px\*1\)\+px\] {
-  top: calc(280px * 1)+px;
-}
-
-.top-\[calc\(280px\*1px\)\+px\] {
-  top: calc(280px * 1px)+px;
-}
-
-.top-\[calc\(280px\*1px\)\] {
-  top: calc(280px * 1px);
-}
-
-.top-\[calc\(100\%_-_10rem\)\] {
-  top: calc(100% - 10rem);
-}
-
-.top-\[calc\(100\%_-_rem\)\] {
-  top: calc(100% - rem);
-}
-
-.top-\[calc\(100\%_-_\$\{star\}rem\)\] {
-  top: calc(100% - ${star}rem);
-}
-
-.top-\[calc\(100\%-\$\{star\}rem\)\] {
-  top: calc(100% - ${star}rem);
-}
-
-.top-\[calc\(100\%-10rem\)\] {
-  top: calc(100% - 10rem);
 }
 
 .z-10 {
@@ -709,6 +661,10 @@ body {
 
 .h-0 {
   height: 0px;
+}
+
+.h-0\.5 {
+  height: 0.125rem;
 }
 
 .h-1 {
@@ -771,6 +727,10 @@ body {
 
 .w-17 {
   width: 4.25rem;
+}
+
+.w-30 {
+  width: 8.125rem;
 }
 
 .w-5 {
@@ -1150,10 +1110,6 @@ body {
   border-radius: 0.125rem;
 }
 
-.rounded-\[1\] {
-  border-radius: 1;
-}
-
 .rounded-b-sm {
   border-bottom-right-radius: 0.125rem;
   border-bottom-left-radius: 0.125rem;
@@ -1241,6 +1197,11 @@ body {
   background-color: rgb(155 89 182 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#fff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-\[white\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1252,16 +1213,6 @@ body {
 }
 
 .bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#fff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
@@ -1547,6 +1498,31 @@ body {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shoot {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(20deg);
+  }
+
+  10%,
+  100% {
+    transform: translate3d(451px, 164px, 0) rotate(20deg);
+  }
 }
 
 .hover\:text-gray-300:hover {

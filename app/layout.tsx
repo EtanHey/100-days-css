@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./globals.scss";
 import Header from "./Header";
 export const metadata = {
   title: "Etan's 100 Days of css",

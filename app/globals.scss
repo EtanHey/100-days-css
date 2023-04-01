@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,5 +26,31 @@
   }
   body {
     @apply flex h-0 min-h-full flex-col overflow-hidden;
+  }
+  .star {
+    animation: random(20) + 20/10 + s flicker (random(20) / -10) + s infinite;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shoot {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(20deg);
+  }
+  10%,
+  100% {
+    transform: translate3d(451px, 164px, 0) rotate(20deg);
   }
 }
