@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-
 module.exports = {
   mode: "jit",
   content: [
@@ -28,6 +27,8 @@ module.exports = {
         fortyDayFrame: "1px 2px 10px 0px rgba(0,0,0,0.2)",
         fortyOneModal: "4px 8px 12px 0 rgba(0, 0, 0, 0.4);",
         fortyTwoFrame: "1px 2px 10px 0px rgba(0, 0, 0, 0.1);",
+        fortyThreeFrame: "1px 2px 10px 0px rgba(0,0,0,0.3)",
+        fortyThreeBulbBefore: "-100px -100px 0px 99px #656565",
       },
       borderWidth: {
         DEFAULT: "1px",
@@ -60,6 +61,8 @@ module.exports = {
         "9xl": "9rem",
       },
       inset: {
+        5.5: "1.25rem",
+        13: "3.125rem",
         15: "3.75rem",
         23: "95px",
         30: "8.125rem",
@@ -124,6 +127,7 @@ module.exports = {
         76: "19rem",
       },
       width: {
+        8.5: "2.1875rem",
         13: "50px",
         17: "4.25rem",
         18: "4.5rem",

@@ -30,6 +30,9 @@
   .star {
     animation: random(20) + 20/10 + s flicker (random(20) / -10) + s infinite;
   }
+  .scale-it{
+    scale: cos(45deg)
+  }
 }
 
 @keyframes flicker {

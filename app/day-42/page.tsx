@@ -10,9 +10,7 @@ const page = () => {
       className={`bg-white shadow-fortyTwoFrame ${openSans.className}`}
     >
       <Window>
-        <div className="stars-father relative h-full w-full rounded-full bg-gradient-to-b from-[#1d4253] to-[#6bb5c4]">
           <StarsStateProvider />
-        </div>
       </Window>
     </GenericFrame>
   );

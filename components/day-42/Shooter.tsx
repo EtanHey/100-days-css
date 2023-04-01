@@ -3,7 +3,7 @@ import React from "react";
 
 const Shooter = () => {
   const delay = Math.ceil(Math.random() * 6) + 20;
-  const duration = Math.ceil(Math.random() * 500) / 10;
+  const duration = Math.ceil(Math.random() * 250) / 10;
   return (
     <div className={`-left-30 w-30 absolute h-0.5 rounded-full`}>
       <Image
