@@ -12,7 +12,7 @@ const StatefulError = () => {
     <>
       <ErrorModal {...{ handleClicked, isOpen }} />
       <div
-        className={`absolute bottom-3 left-3 rounded-md bg-41st-day-red py-2 px-4 shadow-FortyDayFrame ${
+        className={`absolute bottom-3 left-3 rounded-md bg-41st-day-red py-2 px-4 shadow-fortyDayFrame ${
           isOpen ? "animate-hideErrorPopup" : "animate-showErrorPopup"
         }`}
       >

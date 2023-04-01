@@ -7,7 +7,7 @@ import React from "react";
 const page = () => {
   
   return (
-    <GenericFrame className=" shadow-FortyDayFrame">
+    <GenericFrame className=" shadow-fortyDayFrame">
       <StatefulPics />
     </GenericFrame>
   );

@@ -10,7 +10,7 @@ const ErrorModal = ({
 }) => {
   return (
     <div
-      className={`absolute left-15 top-23 h-53 w-74 rounded-sm antialiased shadow-FortyOneModal transition-all duration-300 ${
+      className={`absolute left-15 top-23 h-53 w-74 rounded-sm antialiased shadow-fortyOneModal transition-all duration-300 ${
         isOpen ? "animate-openModal" : "animate-closeModal"
       }`}
     >

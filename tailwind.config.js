@@ -1,5 +1,25 @@
 /** @type {import('tailwindcss').Config} */
+
+const randomStarInset = () => {
+  const stars = Array.from({ length: 300 }, (x, i) => {
+    return i;
+  });
+
+  let starsConfig = {};
+  const starsString = () =>
+    stars.map((star) => {
+      starsConfig = {
+        ...starsConfig,
+        [`l_star_#${star}`]: `${Math.floor(Math.random() * 280 * 100) / 100}px`,
+        [`t_star_#${star}`]: `${Math.floor(Math.random() * 280 * 100) / 100}px`,
+      };
+    });
+  starsString();
+  return starsConfig;
+};
+
 module.exports = {
+  mode: "jit",
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./app/**/*.types.{js,ts,jsx,tsx}",
@@ -8,8 +28,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors:{
-        "41st-day-red":"#F65656"
+      colors: {
+        "41st-day-red": "#F65656",
       },
       fontFamily: {
         courierNew: "var(--font-courier-new)",
@@ -22,8 +42,9 @@ module.exports = {
         firstDayFrame: "4px 8px 16px 0 rgba(0,0,0,0.1)",
         thirtyEighthFrame: "1px 2px 10px 0px rgba(0,0,0,0.3)",
         firstDayTip: "0 0 13px 0 rgba(0,0,0,0.2)",
-        FortyDayFrame: "1px 2px 10px 0px rgba(0,0,0,0.2)",
-        FortyOneModal: "4px 8px 12px 0 rgba(0, 0, 0, 0.4);",
+        fortyDayFrame: "1px 2px 10px 0px rgba(0,0,0,0.2)",
+        fortyOneModal: "4px 8px 12px 0 rgba(0, 0, 0, 0.4);",
+        fortyTwoFrame: "1px 2px 10px 0px rgba(0, 0, 0, 0.1);",
       },
       borderWidth: {
         DEFAULT: "1px",
@@ -59,6 +80,7 @@ module.exports = {
         15: "3.75rem",
         23: "95px",
       },
+      inset: { ...randomStarInset() },
       height: {
         13: "50px",
         17: "4.25rem",
