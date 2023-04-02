@@ -4,7 +4,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <GenericFrame className={`bg-[#222] shadow-fortyThreeFrame`}>
+    <GenericFrame className={`bg-[#222] shadow-fortyThreeFrame rounded-sm`}>
       <SquareProvider />
     </GenericFrame>
   );

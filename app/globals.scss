@@ -30,8 +30,8 @@
   .star {
     animation: random(20) + 20/10 + s flicker (random(20) / -10) + s infinite;
   }
-  .scale-it{
-    scale: cos(45deg)
+  .scale-it {
+    scale: cos(45deg);
   }
 }
 
@@ -55,5 +55,16 @@
   10%,
   100% {
     transform: translate3d(451px, 164px, 0) rotate(20deg);
+  }
+}
+
+@keyframes rotateSquare {
+  0% {
+    transform-origin: 0 0;
+    transform: rotate(0deg) translate(-50%, -50%) ;
+  }
+  100% {
+    transform-origin: 0 0;
+    transform: rotate(360deg) translate(-50%, -50%);
   }
 }
