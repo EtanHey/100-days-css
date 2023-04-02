@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="flex h-fit w-full flex-row items-center bg-[#6B329F] px-3 py-4 font-bold text-white">
+    <header className="flex sticky top-0 z-50 h-fit w-full flex-row items-center bg-[#6B329F] px-3 py-4 font-bold text-white">
       <nav className="center">
         <ul className="flex flex-wrap items-center justify-center gap-y-2">
           <li>

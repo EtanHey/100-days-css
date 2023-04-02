@@ -5,8 +5,8 @@ const SmallCoveringCircle = ({ side }: { side: "left" | "right" }) => {
     <span
       onClick={(ev) => ev.stopPropagation()}
       className={`
-    z-20 h-17 w-17 translate-y-1 rounded-full bg-[white] 
-   ${side === "left" ? "translate-x-2/3" : "-translate-x-2/3"}
+    z-20 h-18 w-18 rounded-full bg-[white] 
+   ${side === "left" ? "-translate-x-4.5/12" : "translate-x-4.5/12"}
    `}
     />
   );

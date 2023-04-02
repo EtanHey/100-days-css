@@ -6,11 +6,11 @@ const CoveringCircle = ({ side }: { side: "left" | "right" }) => {
     onClick={(ev) => ev.stopPropagation()}
 
       className={`
-       z-20 h-17 w-17 rounded-full bg-[#9B59B6] translate-y-1
-      ${side === "left" ? "translate-x-2/3" : "-translate-x-2/3"}
-      `}
-    />
-  );
-};
-
+       z-20 h-18 w-18 rounded-full bg-[#9B59B6] 
+       ${side === "left" ? "-translate-x-4.5/12" : "translate-x-4.5/12"}
+       `}
+       />
+       );
+      };
+      
 export default CoveringCircle;
