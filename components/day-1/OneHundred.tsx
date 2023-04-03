@@ -4,7 +4,7 @@ import Zero from "./Zero";
 
 const OneHundred = () => {
   return (
-    <div className="number xs:h-[75px] xs:w-[150px] relative h-[50px] w-[100px] sm:h-[100px] sm:w-[200px]">
+    <div className="number relative sm:h-[100px] sm:w-[200px]">
       <One />
       <Zero />
       <Zero second={true} />

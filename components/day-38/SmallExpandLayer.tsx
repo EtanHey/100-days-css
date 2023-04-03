@@ -14,7 +14,7 @@ const SmallExpandLayer = ({
       onClick={() => setClicked((p) => !p)}
       className={`logo absolute flex bg-clip-content transition-all duration-500  ${
         clicked
-          ? "xs:scale-75 scale-50 ease-in sm:scale-100"
+          ? "ease-in sm:scale-100"
           : "scale-0 ease-out"
       }`}
     >

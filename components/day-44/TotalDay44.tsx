@@ -10,7 +10,7 @@ const TotalDay44 = () => {
       <div
         onMouseEnter={() => setPlay(false)}
         onMouseLeave={() => setPlay(true)}
-        className="xs:scale-75 relative h-full w-full scale-50 overflow-clip antialiased grayscale sm:scale-100"
+        className="relative h-full w-full overflow-clip antialiased grayscale sm:scale-100"
       >
         {squares.map((_, index) => (
           <Square key={index} index={index} play={play} />
