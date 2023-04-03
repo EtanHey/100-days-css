@@ -2,7 +2,7 @@ import React from "react";
 
 const WarningSVG = () => {
   return (
-    <div className="relative h-fit w-fit scale-50 md:scale-75 lg:scale-100">
+    <div className="xs:scale-75 relative h-fit w-fit scale-50 sm:scale-100">
       <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/3  text-xl font-semibold text-white">
         !
       </p>

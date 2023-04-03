@@ -3,7 +3,7 @@ import React, { ReactNode } from "react";
 const RelativeFrame = ({ children }: { children: ReactNode }) => {
   return (
     <span
-      className={`relative h-[200px] w-[200px] md:h-[300px] md:w-[300px] lg:h-[400px] lg:w-[400px]`}
+      className={`xs:h-[300px] xs:w-[300px] relative h-[200px] w-[200px] sm:h-[400px] sm:w-[400px]`}
     >
       {children}
     </span>

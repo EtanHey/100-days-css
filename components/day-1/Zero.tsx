@@ -6,10 +6,10 @@ const Zero = ({ second }: { second?: boolean }) => {
       className={`
       ${
         second
-          ? "left-[50px] z-[6] md:left-[75px] lg:left-[100px]"
-          : "left-[8.5px] z-[8] md:left-[12.75px] lg:left-[17px]"
+          ? "xs:left-[75px] left-[50px] z-[6] sm:left-[100px]"
+          : "xs:left-[12.75px] left-[8.5px] z-[8] sm:left-[17px]"
       } 
-       absolute top-0 box-border h-[50px] w-[50px] rounded-full border-12 border-solid border-white shadow-firstDayTip md:h-[75px] md:w-[75px] md:border-18 lg:h-[100px] lg:w-[100px] lg:border-24`}
+       xs:h-[75px] xs:w-[75px] xs:border-18 absolute top-0 box-border h-[50px] w-[50px] rounded-full border-12 border-solid border-white shadow-firstDayTip sm:h-[100px] sm:w-[100px] sm:border-24`}
     ></span>
   );
 };

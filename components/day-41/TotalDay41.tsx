@@ -17,7 +17,7 @@ const TotalDay41 = () => {
     >
       <ErrorModal {...{ handleClicked, isOpen }} />
       <div
-        className={`absolute bottom-[6px] left-[6px] rounded-md  bg-41st-day-red py-1 px-2 shadow-fortyDayFrame md:bottom-[9px] md:left-[9px] md:py-1.5 md:px-3 lg:bottom-3 lg:left-3 lg:py-2 lg:px-4 ${
+        className={`xs:bottom-[9px] xs:left-[9px] xs:py-1.5 xs:px-3  absolute bottom-[6px] left-[6px] rounded-md bg-41st-day-red py-1 px-2 shadow-fortyDayFrame sm:bottom-3 sm:left-3 sm:py-2 sm:px-4 ${
           isOpen ? "animate-hideErrorPopup" : "animate-showErrorPopup"
         }`}
       >

@@ -10,29 +10,29 @@ const ErrorModal = ({
 }) => {
   return (
     <div
-      className={`absolute left-[30px] top-[47.5px] h-[105px] w-[140px] rounded-sm antialiased shadow-fortyOneModal transition-all duration-300 md:left-[45px] md:top-[71.25px] md:h-[157.5px] md:w-[210px] lg:left-15 lg:top-23 lg:h-53 lg:w-74 ${
+      className={`xs:left-[45px] xs:top-[71.25px] xs:h-[157.5px] xs:w-[210px] absolute left-[30px] top-[47.5px] h-[105px] w-[140px] rounded-sm antialiased shadow-fortyOneModal transition-all duration-300 sm:left-15 sm:top-23 sm:h-53 sm:w-74 ${
         isOpen ? "animate-openModal" : "animate-closeModal"
       }`}
     >
       <div className="flex h-full flex-col justify-between rounded-sm bg-white text-black">
-        <div className=" mt-3 flex grow flex-col items-center justify-around px-[15px] md:mt-[18px] md:px-[22.5px] lg:mt-6 lg:px-7.5">
+        <div className=" xs:mt-[18px] xs:px-[22.5px] mt-3 flex grow flex-col items-center justify-around px-[15px] sm:mt-6 sm:px-7.5">
           <WarningSVG />
           <main
             className={
-              "flex flex-col gap-y-[3px] md:gap-y-[4.5px] lg:gap-y-1.5"
+              "xs:gap-y-[4.5px] flex flex-col gap-y-[3px] sm:gap-y-1.5"
             }
           >
-            <h1 className="text-[9px] leading-3 md:text-[13.5px] md:leading-[18px] lg:text-lg lg:leading-6">
+            <h1 className="xs:text-[13.5px] xs:leading-[18px] text-[9px] leading-3 sm:text-lg sm:leading-6">
               Oh snap!
             </h1>
-            <p className="text-[7px] font-light leading-[9.5px] text-[#415868] md:text-[10.5px] md:leading-[14.25px] lg:text-sm lg:leading-[19px] ">
+            <p className="xs:text-[10.5px] xs:leading-[14.25px] text-[7px] font-light leading-[9.5px] text-[#415868] sm:text-sm sm:leading-[19px] ">
               An error has occurred while creating an error report.
             </p>
           </main>
         </div>
         <button
           onClick={handleClicked}
-          className="h-5 w-full rounded-b-sm bg-41st-day-red text-[9px] capitalize leading-3 text-white md:h-[30px] md:text-[13.5px] md:leading-[18px] lg:h-10 lg:text-lg lg:leading-6"
+          className="xs:h-[30px] xs:text-[13.5px] xs:leading-[18px] h-5 w-full rounded-b-sm bg-41st-day-red text-[9px] capitalize leading-3 text-white sm:h-10 sm:text-lg sm:leading-6"
         >
           dismiss
         </button>
