@@ -1,18 +1,18 @@
-import GenericFrame from "@/components/GenericFrame";
-import StarsStateProvider from "@/components/day-42/StarsStateProvider";
+import AbsoluteFrame from "@/components/AbsoluteFrame";
+import TotalDay42 from "@/components/day-42/TotalDay42";
 import Window from "@/components/day-42/Window";
 import { openSans } from "@/fonts";
 import React from "react";
 
 const page = () => {
   return (
-    <GenericFrame
+    <AbsoluteFrame
       className={`bg-white shadow-fortyTwoFrame ${openSans.className}`}
     >
       <Window>
-          <StarsStateProvider />
+        <TotalDay42 />
       </Window>
-    </GenericFrame>
+    </AbsoluteFrame>
   );
 };
 

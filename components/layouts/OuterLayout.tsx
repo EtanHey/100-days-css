@@ -3,9 +3,9 @@ import React, { ReactNode } from "react";
 const OuterLayout = ({ children }: { children: ReactNode }) => {
   return (
     <main
-      className="scrollbar-none flex h-fit min-h-full w-full flex-col place-content-center place-items-center justify-items-center overflow-y-scroll text-center"
+      className=" flex h-full w-full flex-col place-content-center place-items-center justify-items-center overflow-hidden text-center"
     >
-      <section className="h-full w-full">{children}</section>
+      <section className=" h-0 min-h-full overflow-y-scroll w-full flex flex-col">{children}</section>
     </main>
   );
 };

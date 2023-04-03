@@ -1,12 +1,12 @@
-import GenericFrame from "@/components/GenericFrame";
-import SquareProvider from "@/components/day-44/SquareProvider";
+import AbsoluteFrame from "@/components/AbsoluteFrame";
+import TotalDay44 from "@/components/day-44/TotalDay44";
 import React from "react";
 
 const page = () => {
   return (
-    <GenericFrame className={`bg-[#222] shadow-fortyThreeFrame rounded-sm`}>
-      <SquareProvider />
-    </GenericFrame>
+    <AbsoluteFrame className={`rounded-sm bg-[#222] shadow-fortyThreeFrame`}>
+      <TotalDay44 />
+    </AbsoluteFrame>
   );
 };
 

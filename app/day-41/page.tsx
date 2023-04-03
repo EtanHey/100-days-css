@@ -1,15 +1,15 @@
-import GenericFrame from "@/components/GenericFrame";
-import StatefulError from "@/components/day-41/StatefulError";
+import AbsoluteFrame from "@/components/AbsoluteFrame";
+import TotalDay41 from "@/components/day-41/TotalDay41";
 import { openSans } from "@/fonts";
 import React from "react";
 
 const page = () => {
   return (
-    <GenericFrame
+    <AbsoluteFrame
       className={`bg-[#3F3F3F] shadow-thirtyEighthFrame ${openSans.className}`}
     >
-      <StatefulError />
-    </GenericFrame>
+      <TotalDay41 />
+    </AbsoluteFrame>
   );
 };
 
