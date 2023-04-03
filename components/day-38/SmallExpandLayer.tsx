@@ -13,7 +13,9 @@ const SmallExpandLayer = ({
     <span
       onClick={() => setClicked((p) => !p)}
       className={`logo absolute flex bg-clip-content transition-all duration-500  ${
-        clicked ? "scale-100 ease-in" : "scale-0 ease-out"
+        clicked
+          ? "scale-50 ease-in md:scale-75 lg:scale-100"
+          : "scale-0 ease-out"
       }`}
     >
       {children}

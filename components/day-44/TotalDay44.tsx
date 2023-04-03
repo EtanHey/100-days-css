@@ -9,12 +9,12 @@ const TotalDay44 = () => {
   return (
     <AbsoluteFrame
       centered={true}
-      className={`rounded-sm bg-[#222] shadow-fortyThreeFrame`}
+      className={`rounded-sm bg-[#222]  shadow-fortyThreeFrame`}
     >
       <div
         onMouseEnter={() => setPlay(false)}
         onMouseLeave={() => setPlay(true)}
-        className="relative h-full w-full overflow-clip antialiased grayscale"
+        className="relative scale-50 md:scale-75 lg:scale-100 h-full w-full overflow-clip antialiased grayscale"
       >
         {squares.map((_, index) => (
           <Square key={index} index={index} play={play} />

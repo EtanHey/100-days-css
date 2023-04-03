@@ -2,8 +2,10 @@ import React from "react";
 
 const WarningSVG = () => {
   return (
-    <div className="relative w-fit h-fit">
-      <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/3 font-semibold text-xl text-white">!</p>
+    <div className="relative h-fit w-fit scale-50 md:scale-75 lg:scale-100">
+      <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/3  text-xl font-semibold text-white">
+        !
+      </p>
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
@@ -13,7 +15,7 @@ const WarningSVG = () => {
         preserveAspectRatio="xMidYMid meet"
       >
         <g
-        className="fill-41st-day-red"
+          className="fill-41st-day-red"
           transform="translate(0.000,38) scale(0.0033665,-0.0033643989)"
           stroke="none"
         >

@@ -18,9 +18,9 @@ const TotalDay39 = () => {
   return (
     <AbsoluteFrame
       centered={true}
-      className="bg-[#4a617a] shadow-firstDayFrame"
+      className="bg-[#4a617a]  shadow-firstDayFrame"
     >
-      <div className="relative flex h-full w-full place-items-center justify-center ">
+      <div className="relative scale-50 md:scale-75 lg:scale-100 flex h-full w-full place-items-center justify-center ">
         <MenuButton {...{ clicked, closeMenu, openMenu }} />
         <Menu {...{ closeMenu, menu }} />
       </div>

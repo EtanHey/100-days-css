@@ -14,7 +14,7 @@ const Square = ({ index, play }: { index: number; play: boolean }) => {
           70 + (20 - index) * 8
         })`,
       }}
-      className={`absolute  left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border `}
+      className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border `}
       key={index}
     />
   );
