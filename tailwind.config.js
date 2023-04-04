@@ -395,6 +395,28 @@ module.exports = {
         fillSVGLine: "fillSVGLine 800ms ease-in-out forwards",
         emptySVGLine: "emptySVGLine 800ms ease-in-out forwards",
       },
+      gridAutoRows: {
+        "2fr": "minmax(0px, 2fr)",
+        "3fr": "minmax(0px, 3fr)",
+        "4fr": "minmax(0px, 4fr)",
+        "5fr": "minmax(0px, 5fr)",
+        "6fr": "minmax(0px, 6fr)",
+        "7fr": "minmax(0px, 7fr)",
+        "8fr": "minmax(0px, 8fr)",
+        "9fr": "minmax(0px, 9fr)",
+        "10fr": "minmax(0, 10fr)",
+      },
+      gridAutoColumns: {
+        "2fr": "minmax(0, 2fr)",
+        "3fr": "minmax(0, 3fr)",
+        "4fr": "minmax(0, 4fr)",
+        "5fr": "minmax(0, 5fr)",
+        "6fr": "minmax(0, 6fr)",
+        "7fr": "minmax(0, 7fr)",
+        "8fr": "minmax(0, 8fr)",
+        "9fr": "minmax(0, 9fr)",
+        "10fr": "minmax(0, 10fr)",
+      },
       keyframes: {
         expandTop: {
           "0%": {
