@@ -29,7 +29,7 @@ export default function Home() {
         </sub>
       </div>
       {/* Grid */}
-      <div className="grid  h-min w-full grow scale-90 grid-cols-1 justify-items-center gap-8 gap-x-14 gap-y-10 bg-white md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+      <div className="grid  h-min w-full grow scale-90 grid-cols-1 justify-items-center gap-8 gap-x-14 gap-y-10  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         {/* Page 1 */}
         <div className="relative flex h-fit w-0 min-w-fit flex-col gap-1.5">
           <Link
