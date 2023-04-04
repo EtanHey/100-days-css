@@ -11,7 +11,7 @@ const TotalDay45 = () => {
       centered={true}
       className={`rounded-md bg-[#5CA4EA]  shadow-fortyThreeFrame  ${openSans.className}`}
     >
-      <div className="absolute top-1/2 left-1/2 h-[63.4px] w-45 -translate-x-1/2 -translate-y-1/2 overflow-hidden bg-[#5CA4EA] uppercase outline outline-[.5px] outline-white transition-colors duration-700">
+      <div className="absolute top-1/2 left-1/2 h-[63.4px] w-45 -translate-x-1/2 -translate-y-1/2 overflow-hidden border-[.5px] border-solid border-white bg-[#5CA4EA] uppercase transition-colors duration-700">
         <button
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
@@ -30,7 +30,7 @@ const TotalDay45 = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <polyline points="180,0 179,62.4 1,62.4 1,1 179,0" />
+          <polyline points="179,0 179,62.4 1,62.4 1,1 179,0.5" />
         </svg>
       </div>
     </AbsoluteFrame>
