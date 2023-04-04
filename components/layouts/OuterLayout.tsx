@@ -10,7 +10,7 @@ const OuterLayout = ({
   return (
     <main className=" flex h-full w-full flex-col place-content-center place-items-center justify-items-center overflow-hidden text-center">
       <section
-        className={`flex h-0 min-h-full w-full flex-col overflow-y-scroll ${className}`}
+        className={`scrollbar-none  flex h-0 min-h-full w-full flex-col overflow-y-scroll ${className}`}
       >
         {children}
       </section>
