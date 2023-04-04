@@ -5,7 +5,7 @@ const OuterLayout = ({
   className,
 }: {
   children: ReactNode;
-  className: string;
+  className?: string;
 }) => {
   return (
     <main className=" flex h-full w-full flex-col place-content-center place-items-center justify-items-center overflow-hidden text-center">
