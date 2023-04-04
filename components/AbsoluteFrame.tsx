@@ -11,7 +11,7 @@ const AbsoluteFrame = ({
 }) => {
   return (
     <div
-      className={`GenericFrame  absolute top-1/2 left-1/2  overflow-hidden rounded-md text-white sm:-mt-[200px] sm:-ml-[200px] sm:h-[400px] sm:w-[400px]
+      className={`GenericFrame  absolute top-1/2 left-1/2  -mt-[200px] -ml-[200px] h-[400px] w-[400px] overflow-hidden rounded-md text-white
       ${className}`}
     >
       {centered ? (

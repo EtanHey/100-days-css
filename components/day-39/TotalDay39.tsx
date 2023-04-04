@@ -20,7 +20,7 @@ const TotalDay39 = () => {
       centered={true}
       className="bg-[#4a617a]  shadow-firstDayFrame"
     >
-      <div className="relative flex h-full w-full place-items-center justify-center sm:scale-100 ">
+      <div className="relative flex h-full w-full scale-100 place-items-center justify-center ">
         <MenuButton {...{ clicked, closeMenu, openMenu }} />
         <Menu {...{ closeMenu, menu }} />
       </div>

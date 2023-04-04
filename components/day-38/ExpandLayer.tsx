@@ -18,9 +18,7 @@ const ExpandLayer = ({
         setClicked((p) => !p);
       }}
       className={`logo relative flex  bg-clip-content transition-all duration-500 ease-in ${
-        clicked
-          ? "ease-out sm:scale-950"
-          : "ease-in sm:scale-100"
+        clicked ? "scale-950 ease-out" : "scale-100 ease-in"
       }`}
     >
       {children}

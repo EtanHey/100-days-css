@@ -7,6 +7,7 @@ import TotalDay41 from "@/components/day-41/TotalDay41";
 import TotalDay42 from "@/components/day-42/TotalDay42";
 import Window from "@/components/day-42/Window";
 import TotalDay44 from "@/components/day-44/TotalDay44";
+import TotalDay45 from "@/components/day-45/TotalDay45";
 import OuterLayout from "@/components/layouts/OuterLayout";
 import { openSans } from "@/fonts";
 import { Inter } from "next/font/google";
@@ -15,12 +16,10 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  let scale = 1;
-
   return (
     <OuterLayout>
-      <div className="flex h-fit w-full flex-col gap-6 py-6">
-        <div className={` flex flex-col gap-3 ${inter.className}`}>
+      <div className="flex h-fit w-full flex-col gap-6">
+        <div className={`flex flex-col gap-3 ${inter.className}`}>
           <h1 className={`text-2xl font-bold leading-snug`}>
             NextJs 13.2.4 Template
           </h1>
@@ -32,9 +31,9 @@ export default function Home() {
             <span className="bg-gray-300 px-1 py-px">npm i</span>
           </sub>
         </div>
-        <div className="box-content flex h-fit min-h-full flex-row flex-wrap place-content-around gap-y-6 overflow-auto">
+        <div className="box-content grid-flow-row justify-items-center scale-90 grid h-fit min-h-full gap-8 my-3 px-3">
           {/* Page 1 */}
-          <div className="relative flex h-max w-fit flex-col gap-1.5 ">
+          <div className="relative flex h-fit w-0 min-w-fit flex-col gap-1.5">
             <Link
               href="/day-1"
               className="w-fit  rounded-lg bg-black/10 px-2 py-1 text-left text-2xl leading-relaxed  backdrop-blur-xl hover:bg-black/30"
@@ -46,7 +45,7 @@ export default function Home() {
             </RelativeFrame>
           </div>
           {/* Page 38 */}
-          <div className="relative flex h-fit w-fit flex-col gap-1.5 ">
+          <div className="relative flex h-fit w-0 min-w-fit flex-col gap-1.5">
             <Link
               href="/day-38"
               className="w-fit rounded-lg bg-black/10 px-2 py-1 text-left text-2xl leading-relaxed  backdrop-blur-xl hover:bg-black/30"
@@ -58,7 +57,7 @@ export default function Home() {
             </RelativeFrame>
           </div>
           {/* Page 39 */}
-          <div className="relative flex h-fit w-fit flex-col gap-1.5 ">
+          <div className="relative flex h-fit w-0 min-w-fit flex-col gap-1.5">
             <Link
               href="/day-39"
               className="w-fit rounded-lg bg-black/10 px-2 py-1 text-left text-2xl  leading-relaxed backdrop-blur-xl hover:bg-black/30"
@@ -71,7 +70,7 @@ export default function Home() {
             </RelativeFrame>
           </div>
           {/* Page 41 */}
-          <div className="relative flex h-fit w-fit flex-col gap-1.5 ">
+          <div className="relative flex h-fit w-0 min-w-fit flex-col gap-1.5">
             <Link
               href="/day-41"
               className="w-fit rounded-lg bg-black/10 px-2 py-1 text-left text-2xl  leading-relaxed backdrop-blur-xl hover:bg-black/30"
@@ -84,7 +83,7 @@ export default function Home() {
             </RelativeFrame>
           </div>
           {/* Page 42 */}
-          <div className="relative flex h-fit w-fit flex-col gap-1.5 ">
+          <div className="relative flex h-fit w-0 min-w-fit flex-col gap-1.5">
             <Link
               href="/day-42"
               className="w-fit rounded-lg bg-black/10 px-2 py-1 text-left text-2xl  leading-relaxed backdrop-blur-xl hover:bg-black/30"
@@ -97,7 +96,7 @@ export default function Home() {
             </RelativeFrame>
           </div>
           {/* Page 44 */}
-          <div className="relative flex h-fit w-fit flex-col gap-1.5 ">
+          <div className="relative flex h-fit w-0 min-w-fit flex-col gap-1.5">
             <Link
               href="/day-44"
               className="w-fit rounded-lg bg-black/10 px-2 py-1 text-left text-2xl  leading-relaxed backdrop-blur-xl hover:bg-black/30"
@@ -106,6 +105,18 @@ export default function Home() {
             </Link>
             <RelativeFrame>
               <TotalDay44 />
+            </RelativeFrame>
+          </div>
+          {/* Page 45 */}
+          <div className="relative flex h-fit w-0 min-w-fit flex-col gap-1.5">
+            <Link
+              href="/day-45"
+              className="w-fit rounded-lg bg-black/10 px-2 py-1 text-left text-2xl  leading-relaxed backdrop-blur-xl hover:bg-black/30"
+            >
+              Day 45
+            </Link>
+            <RelativeFrame>
+              <TotalDay45 />
             </RelativeFrame>
           </div>
         </div>

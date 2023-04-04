@@ -5,12 +5,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <AbsoluteFrame
-      centered={true}
-      className={`rounded-md bg-[#5CA4EA]  shadow-fortyThreeFrame  ${openSans.className}`}
-    >
       <TotalDay45 />
-    </AbsoluteFrame>
   );
 };
 
