@@ -7,6 +7,7 @@ import TotalDay42 from "@/components/day-42/TotalDay42";
 import TotalDay44 from "@/components/day-44/TotalDay44";
 import TotalDay45 from "@/components/day-45/TotalDay45";
 import TotalDay46 from "@/components/day-46/TotalDay46";
+import TotalDay47 from "@/components/day-47/TotalDay47";
 import OuterLayout from "@/components/layouts/OuterLayout";
 import { Inter } from "next/font/google";
 import Link from "next/link";
@@ -127,6 +128,18 @@ export default function Home() {
           </Link>
           <RelativeFrame>
             <TotalDay46 />
+          </RelativeFrame>
+        </div>
+        {/* Page 47 */}
+        <div className="relative flex h-fit w-0 min-w-fit flex-col gap-1.5">
+          <Link
+            href="/day-47"
+            className="w-fit rounded-lg bg-black/10 px-2 py-1 text-left text-2xl  leading-relaxed backdrop-blur-xl hover:bg-black/30"
+          >
+            Day 47
+          </Link>
+          <RelativeFrame>
+            <TotalDay47 />
           </RelativeFrame>
         </div>
       </div>
