@@ -1,3 +1,4 @@
+@import '../components/day-48/day48';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,14 +28,16 @@
   body {
     @apply flex h-0 min-h-full w-screen flex-col overflow-hidden;
   }
+}
+@layer components {
   .star {
     animation: random(20) + 20/10 + s flicker (random(20) / -10) + s infinite;
   }
   .scale-it {
     scale: cos(45deg);
   }
+  
 }
-
 @keyframes flicker {
   0% {
     opacity: 1;
@@ -74,8 +77,7 @@
     transform: scale(1 - (0 / 7)) rotate((0 * 5) + deg);
   }
   100% {
-    transform: scale(1 - (0 / 22))
-      rotate(((0 * 10) + 360) + deg);
+    transform: scale(1 - (0 / 22)) rotate(((0 * 10) + 360) + deg);
   }
 }
 

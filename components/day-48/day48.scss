@@ -1,0 +1,39 @@
+.Day48Frame {
+  @apply rounded-md bg-[#E47512] shadow-fortyThreeFrame;
+  .Day48center {
+    @apply absolute top-1/4 left-1/4 h-50 w-50;
+    perspective: 1000px;
+    .cube {
+      @apply absolute h-50 w-50  cursor-pointer  bg-white transition-all duration-1000 ease-in-out;
+      transform-style: preserve-3d;
+      transform: translateZ(-100px) rotateX(70deg) rotateZ(-45deg);
+      &:hover {
+        transform: translateZ(-100px) rotateX(-120deg) rotateZ(135deg);
+      }
+      .front {
+        transform: rotateY(0deg) translateZ(100px);
+        @apply bg-white;
+      }
+      .back {
+        transform: rotateX(180deg) translateZ(100px);
+        @apply bg-[#ccc];
+      }
+      .bottom {
+        @apply bg-[#ddd];
+        transform: rotateX(-90deg) translateZ(100px);
+      }
+      .top {
+        @apply bg-[#eee];
+        transform: rotateX(90deg) translateZ(100px);
+      }
+      .left {
+        @apply bg-[#eee];
+        transform: rotateY(-90deg) translateZ(100px);
+      }
+      .right {
+        @apply bg-[#ddd];
+        transform: rotateY(90deg) translateZ(100px);
+      }
+    }
+  }
+}
