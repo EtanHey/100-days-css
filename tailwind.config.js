@@ -121,6 +121,7 @@ module.exports = {
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
+        25: "6.25rem",
         30: "8.125rem",
         50: "12.5rem",
         53: "13.125rem",
@@ -165,6 +166,7 @@ module.exports = {
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
+        25: "6.25rem",
         30: "8.125rem",
         50: "12.5rem",
         53: "13.125rem",
@@ -209,6 +211,7 @@ module.exports = {
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
+        25: "6.25rem",
         30: "8.125rem",
         50: "12.5rem",
         53: "13.125rem",
@@ -242,6 +245,7 @@ module.exports = {
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
+        25: "6.25rem",
         30: "8.125rem",
         50: "12.5rem",
         53: "13.125rem",
@@ -275,6 +279,7 @@ module.exports = {
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
+        25: "6.25rem",
         30: "8.125rem",
         50: "12.5rem",
         53: "13.125rem",
@@ -308,6 +313,7 @@ module.exports = {
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
+        25: "6.25rem",
         30: "8.125rem",
         50: "12.5rem",
         45: "11.25rem",
@@ -422,6 +428,7 @@ module.exports = {
         hideErrorPopup: "closeModal 0.6s ease-in-out forwards",
         fillSVGLine: "fillSVGLine 800ms ease-in-out forwards",
         emptySVGLine: "emptySVGLine 800ms ease-in-out forwards",
+        fallThrough: "fallThrough 3s ease-in-out infinite",
       },
       keyframes: {
         expandTop: {
@@ -544,6 +551,43 @@ module.exports = {
             strokeDashoffset: 40,
           },
           to: { strokeDashoffset: -480 },
+        },
+        fallThrough: {
+          '0%' :{
+            transform: 'translate3d(0, -350px, 0) scale(0.8, 1.2);'        },
+        '25%' :{
+            transform: 'translate3d(0, 40px, 0) scale(1.05, 0.9)'
+        },
+        '30%' :{
+            transform: 'translate3d(0, -20px, 0) scale(0.95, 1.02)'
+        },
+        '35%' :{
+            transform: 'translate3d(0, 10px, 0) scale(1.01, 0.98)'
+        },
+        '40%, 45%' :{
+            transform: 'translate3d(0, 0, 0) scale(1) rotate(0)'
+        },
+        '50%' :{
+            transform: 'translate3d(0, 0, 0) scale(1) rotate(5deg)'
+        },
+        '55%' :{
+            transform: 'translate3d(0, 0, 0) scale(1) rotate(-5deg)'
+        },
+        '60%' :{
+            transform: 'translate3d(0, 0, 0) scale(1) rotate(5deg)'
+        },
+        '65%, 70%' :{
+            transform: 'translate3d(0, 0, 0) scale(1) rotate(0deg)'
+        },
+        '75%' :{
+            transform: 'translate3d(0, 10px, 0) scale(1.01, 0.98)'
+        },
+        '80%' :{
+            transform: 'translate3d(0, -20px, 0) scale(1.02, 0.95)'
+        },
+        '100%' :{
+            transform: 'translate3d(0, 350px, 0) scale(0.9, 1.1)'
+        },
         },
       },
       padding: {

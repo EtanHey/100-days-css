@@ -61,6 +61,11 @@ const Header = () => {
               Day 48
             </Link>
           </li>
+          <li>
+            <Link href="/day-50" className="px-3 py-1 text-sm uppercase">
+              Day 50
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
