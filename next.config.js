@@ -1,11 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-    typedRoutes: true,
-  },
+  typedRoutes: true,
   images: {
-    domains: ["100dayscss.com"],
+    remotePatterns: [{ protocol: "https", hostname: "100dayscss.com" }],
   },
 };
 
